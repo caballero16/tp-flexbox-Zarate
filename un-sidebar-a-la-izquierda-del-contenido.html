@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>un sidebar a la izquierda del contenido</title>
+<style>
+  .main{
+    display:flex;
+    gap: 2px;
+    min-height: 100vh;
+  }  
+  .main .sidebar,
+  .main .contenido{
+    height: 100vh;
+    padding: 12px 24px;
+  }
+  .main .sidebar{
+    background: blue;
+    flex: 1;
+  }
+  .main .contenido{
+    background: green;
+    flex: 4;
+  }
+
+</style>
+</head>
+<body>
+<div class="main">  
+  <div class="sidebar">contenido lateral</div>
+  <div class="contenido">Esto sería el contenido principal</div>
+</div>  
+</body>
+</html>
